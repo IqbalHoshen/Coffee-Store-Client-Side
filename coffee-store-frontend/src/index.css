@@ -1,0 +1,68 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default;
+}
+
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #331a15;
+  --color-secondary: #e3b577;
+  --color-accent: #1b1a1a;
+  --color-base-100: white;
+  --color-base-content: #ea4744;
+  --color-base-200: #3c393b;
+  --color-base-300: #d2b48c;
+}
+
+/* @plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+
+  --color-primary: #331a15;
+  --color-secondary: #e3b577;
+  --color-accent: #1b1a1a;
+  --color-base-100: white;
+  --color-base-content: #ea4744;
+  --color-base-200: #3c393b;
+  --color-base-300: #d2b48c;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rancho&display=swap");
+
+* {
+  font-family: "Rancho", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ralewayText {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+.navbar {
+  height: 120px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.banner {
+  height: 800px;
+  width: 100%;
+
+  display: flex;
+  justify-content: right;
+  align-items: center;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
