@@ -6,7 +6,7 @@ const Banner = () => {
         <h1 className="text-[55px] text-white">
           Would you like a Cup of Delicious Coffee?
         </h1>
-        <p className="ralewayText text-white">
+        <p className="ralewayText text-lg text-white">
           It's coffee time - Sip & Savor - Relaxation in every sip! Get the
           nostalgia back!! Your companion of every moment!!! Enjoy the beautiful
           moments and make them memorable.

@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router";
 import HomeLayout from "./layout/HomeLayout";
-import Home from "./component/Home";
-
+import Popular_Products from "./component/Popular_Products";
+// import Loader from "./layout/Loader";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -9,7 +9,9 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        Component: Home,
+        Component: Popular_Products,
+        loader: () => fetch("/coffeeItems.json"),
+        // HydrateFallback: <Loader></Loader>,
       },
     ],
   },

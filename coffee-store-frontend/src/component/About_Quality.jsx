@@ -11,7 +11,7 @@ const About_Quality = () => {
         </figure>
         <div className=" items-center text-start">
           <h2 className="text-primary text-[35px]">Awesome Aroma</h2>
-          <p className="ralewayText text-accent">
+          <p className="ralewayText text-lg text-accent">
             You will definitely be a fan of the design & aroma of your coffee
           </p>
         </div>
@@ -22,7 +22,7 @@ const About_Quality = () => {
         </figure>
         <div className=" items-center text-start">
           <h2 className="text-primary text-[35px]">High Quality</h2>
-          <p className="ralewayText text-accent">
+          <p className="ralewayText text-lg text-accent">
             We served the coffee to you maintaining the best quality{" "}
           </p>
         </div>
@@ -33,7 +33,7 @@ const About_Quality = () => {
         </figure>
         <div className=" items-center text-start">
           <h2 className="text-primary text-[35px]">Pure Grades</h2>
-          <p className="ralewayText text-accent">
+          <p className="ralewayText text-lg text-accent">
             The coffee is made of the green coffee beans which you will love{" "}
           </p>
         </div>
@@ -44,7 +44,7 @@ const About_Quality = () => {
         </figure>
         <div className=" items-center text-start">
           <h2 className="text-primary text-[35px]">Proper Roasting</h2>
-          <p className="ralewayText text-accent">
+          <p className="ralewayText text-lg text-accent">
             Your coffee is brewed by first roasting the green coffee beans{" "}
           </p>
         </div>
