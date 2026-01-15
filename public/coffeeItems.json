@@ -1,0 +1,72 @@
+[
+  {
+    "_id": "1",
+    "name": "Espresso Coffee",
+    "chef": "Mrs. Morisha",
+    "price": 890,
+    "image": "https://i.ibb.co.com/zHGxJw0j/1.png"
+  },
+  {
+    "_id": "2",
+    "name": "Cappuccino",
+    "chef": "Mr. Alex",
+    "price": 750,
+    "image": "https://i.ibb.co.com/Rk7bMv97/5.png"
+  },
+  {
+    "_id": "3",
+    "name": "Latte",
+    "chef": "Ms. Emma",
+    "price": 820,
+    "image": "https://i.ibb.co.com/Kjz4CqYr/2.png"
+  },
+  {
+    "_id": "4",
+    "name": "Americano",
+    "chef": "Mr. John",
+    "price": 680,
+    "image": "https://i.ibb.co.com/LzW0fYXy/3.png"
+  },
+  {
+    "_id": "5",
+    "name": "Mocha",
+    "chef": "Mrs. Clara",
+    "price": 910,
+    "image": "https://i.ibb.co.com/gZ5Qx8HJ/4.png"
+  },
+  {
+    "_id": "6",
+    "name": "Flat White",
+    "chef": "Mr. Daniel",
+    "price": 770,
+    "image": "https://i.ibb.co.com/cWJzxs2/6.png"
+  },
+  {
+    "_id": "7",
+    "name": "Macchiato",
+    "chef": "Ms. Olivia",
+    "price": 860,
+    "image": "https://i.ibb.co.com/Rk7bMv97/5.png"
+  },
+  {
+    "_id": "8",
+    "name": "Cold Brew",
+    "chef": "Mr. Noah",
+    "price": 720,
+    "image": "https://i.ibb.co.com/Kjz4CqYr/2.png"
+  },
+  {
+    "_id": "9",
+    "name": "Iced Latte",
+    "chef": "Ms. Sophia",
+    "price": 800,
+    "image": "https://i.ibb.co.com/zHGxJw0j/1.png"
+  },
+  {
+    "_id": "10",
+    "name": "Caramel Latte",
+    "chef": "Mrs. Amelia",
+    "price": 950,
+    "image": "https://i.ibb.co.com/cWJzxs2/6.png"
+  }
+]
