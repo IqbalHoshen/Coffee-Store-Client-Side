@@ -63,12 +63,12 @@ const CoffeeInputField = () => {
                   />
                 </div>
                 <div className="w-1/2">
-                  <legend className={labelStyle}>Chef</legend>
+                  <legend className={labelStyle}>Price</legend>
                   <input
                     type="text"
-                    name="chef"
+                    name="price"
                     className={inputFild}
-                    placeholder="Enter Coffee Chef"
+                    placeholder="Enter Coffee Price"
                   />
                 </div>
               </fieldset>

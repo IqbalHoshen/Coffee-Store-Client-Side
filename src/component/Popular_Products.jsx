@@ -12,7 +12,7 @@ const titleString = {
 };
 
 const Popular_Products = () => {
-  const data = useLoaderData();
+  const [data, setData] = useState(useLoaderData());
   const [showAll, setShowAll] = useState(false);
   const isShortData = data.length <= 6;
 
@@ -35,7 +35,12 @@ const Popular_Products = () => {
         </div>
         <div className="grid grid-cols-2 gap-4 mt-12">
           {coffeeData.map((item) => (
-            <CoffeeCard key={item._id} item={item}></CoffeeCard>
+            <CoffeeCard
+              key={item._id}
+              data={data}
+              setData={setData}
+              item={item}
+            ></CoffeeCard>
           ))}
         </div>
         {!isShortData && (

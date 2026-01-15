@@ -1,10 +1,37 @@
 import { FaEye, FaPen, FaTrash } from "react-icons/fa";
+import Swal from "sweetalert2";
+import { deleteCoffee } from "../services/crudApi";
 
 const textStyle1 = "font-semibold text-xl text-accent ";
 const textStyle2 = "text-xl text-[#5C5B5B] ";
 
-const CoffeeCard = ({ item }) => {
-  const { name, chef, supplier, url } = item;
+const CoffeeCard = ({ item, data, setData }) => {
+  const { _id, name, price, supplier, url } = item;
+  const handleDeleteCoffee = () => {
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        deleteCoffee(_id).then((res) => {
+          if (res.deletedCount) {
+            setData(data.filter((coffee) => coffee._id !== _id));
+
+            Swal.fire({
+              title: "Deleted!",
+              text: "Your file has been deleted.",
+              icon: "success",
+            });
+          }
+        });
+      }
+    });
+  };
 
   return (
     <div className="card card-side bg-[#F5F4F1]/50 rounded-[10px] p-10 ">
@@ -19,8 +46,8 @@ const CoffeeCard = ({ item }) => {
             <span className={textStyle2}>{name}</span>
           </p>
           <p>
-            <span className={textStyle1}>Chef:</span>{" "}
-            <span className={textStyle2}>{chef}</span>
+            <span className={textStyle1}>Price:</span>{" "}
+            <span className={textStyle2}>{price}</span>
           </p>
           <p>
             <span className={textStyle1}>Supplier:</span>{" "}
@@ -35,7 +62,10 @@ const CoffeeCard = ({ item }) => {
           <button className="btn btn-sm bg-[#3C393B] text-white hover:bg-black">
             <FaPen size={18} />
           </button>
-          <button className="btn btn-sm bg-red-500 text-white hover:bg-red-600">
+          <button
+            onClick={handleDeleteCoffee}
+            className="btn btn-sm bg-red-500 text-white hover:bg-red-600"
+          >
             <FaTrash size={18} />
           </button>
         </div>
