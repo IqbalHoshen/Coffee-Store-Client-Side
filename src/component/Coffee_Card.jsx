@@ -1,12 +1,15 @@
 import { FaEye, FaPen, FaTrash } from "react-icons/fa";
 import Swal from "sweetalert2";
 import { deleteCoffee } from "../services/crudApi";
+import { Link } from "react-router";
 
 const textStyle1 = "font-semibold text-xl text-accent ";
 const textStyle2 = "text-xl text-[#5C5B5B] ";
 
 const CoffeeCard = ({ item, data, setData }) => {
   const { _id, name, price, supplier, url } = item;
+
+  // Delete Coffee Handler
   const handleDeleteCoffee = () => {
     Swal.fire({
       title: "Are you sure?",
@@ -59,9 +62,14 @@ const CoffeeCard = ({ item, data, setData }) => {
           <button className="btn btn-sm bg-[#D2B48C] text-white hover:bg-[#c1a173]">
             <FaEye size={18} />
           </button>
-          <button className="btn btn-sm bg-[#3C393B] text-white hover:bg-black">
+
+          <Link
+            to={`/edit-coffee/${_id}`}
+            className="btn btn-sm bg-[#3C393B] text-white hover:bg-black"
+          >
             <FaPen size={18} />
-          </button>
+          </Link>
+
           <button
             onClick={handleDeleteCoffee}
             className="btn btn-sm bg-red-500 text-white hover:bg-red-600"

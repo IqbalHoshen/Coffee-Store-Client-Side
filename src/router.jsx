@@ -22,6 +22,10 @@ const router = createBrowserRouter([
     path: "/add-coffee",
     element: <CoffeeAddLayout></CoffeeAddLayout>,
   },
+  {
+    path: "/edit-coffee/:id",
+    element: <CoffeeAddLayout></CoffeeAddLayout>,
+  },
 ]);
 
 export default router;
