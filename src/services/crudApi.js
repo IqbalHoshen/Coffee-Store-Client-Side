@@ -21,7 +21,7 @@ export const addCoffee = async (data) => {
 
   return handleResponse(response);
 };
-
+// Update coffee by ID
 export const updateCoffee = async (id, data) => {
   const response = await axios.put(`${API_URL}/update/coffee/${id}`, data);
   return handleResponse(response);

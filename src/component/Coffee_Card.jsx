@@ -59,9 +59,12 @@ const CoffeeCard = ({ item, data, setData }) => {
         </div>
 
         <div className="flex flex-col gap-3">
-          <button className="btn btn-sm bg-[#D2B48C] text-white hover:bg-[#c1a173]">
+          <Link
+            to={`/view-coffee/${_id}`}
+            className="btn btn-sm bg-[#D2B48C] text-white hover:bg-[#c1a173]"
+          >
             <FaEye size={18} />
-          </button>
+          </Link>
 
           <Link
             to={`/edit-coffee/${_id}`}

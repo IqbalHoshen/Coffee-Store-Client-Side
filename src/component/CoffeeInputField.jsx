@@ -85,7 +85,7 @@ const CoffeeInputField = () => {
         <div className=" max-w-[1320px] mx-auto ">
           <Link
             to="/"
-            className="btn btn-xl rounded-3xl btn-primary btn-ghost text-3xl "
+            className="btn btn-xl rounded-3xl btn-primary btn-ghost text-3xl mb-10"
           >
             <FaArrowLeft size={24} color="primary" />
             <span>Back to home</span>
@@ -93,7 +93,9 @@ const CoffeeInputField = () => {
           <div className=" bg-[#F4F3F0]  py-12 px-20">
             <div className="flex flex-col justify-center items-center gap-8">
               <h1 className="text-5xl text-[#374151] text-center">
-                {isEditMode ? "Update Coffee" : "Add New Coffee"}
+                {isEditMode
+                  ? "Update Existing Coffee Details"
+                  : "Add New Coffee"}
               </h1>
               <p className="text-lg text-accent/70 ralewayText text-center max-w-4xl ">
                 It is a long established fact that a reader will be distraceted
@@ -182,7 +184,7 @@ const CoffeeInputField = () => {
                 />
               </fieldset>
               <button className="btn btn-block mt-5 bg-secondary text-2xl text-[#242222]">
-                {isEditMode ? "Update Coffee" : "Add Coffee"}
+                {isEditMode ? "Update Coffee Details" : "Add Coffee"}
               </button>
             </form>
           </div>
